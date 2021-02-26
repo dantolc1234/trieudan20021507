@@ -1,0 +1,21 @@
+ Hello World. 
+A. Dạng bài tìm hiểu
+1. Lệnh:  bool isA = (90 <= grade <= 100); trả lại giá trị True hoặc False nếu grade kiểu nguyên thỏa mãn hoặc không thỏa mãn biểu thức.
+2. Đoạn chương trình in ra kết quả: 
+x = 0 với double x = (double) (3/5);
+x = 0.6 với (double) 3 / 5;
+3.
+4. (Math.sqrt(2) * Math.sqrt(2) == 2) có giá trị so sánh điều kiện nếu căn bậc 2 + căn bậc 2 == 2 hay không.
+5. Chương trình divideByZero không in ra kết quả.
+6. int a = 27 * "three"; thì chương trình không chạy, bị lỗi.
+{double x; cout << x;} thì chương trình in ra x là một dãy kí tự bất kì.
+Chuyển x ra ngoài hàm main thì sẽ in ra x = 0;
+7. Đoạn code trên cho ra kết 0 với kiểu int / int và kết quả 0.75 với các phép chia có kiểu double là thành phần.
+8. Chương trình sẽ bị lỗi khi khai báo 2 biến trùng tên như vậy.
+9. Chương trình in ra arg1 = A, biến arg1 trong khối lệnh con chỉ tới biến arg1 kiểu char mới được khai báo.
+10. Chương trình in ra arg1 = -1, biến arg1 chỉ tới biến arg1 đầu tiên.
+11. Chương trình trên sai vì chưa ép kiểu double cho kết quả.
+12. Đoạn code in ra kết quả: Here. Nó in ra theo lệnh của dòng cout trong khối lệnh nhỏ chứ không liên quan đến câu lệnh if.
+B. Luyện tập biểu thức và các lệnh điều kiện. 
+C. Luyện tập vòng lặp.
+
