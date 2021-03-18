@@ -1,0 +1,31 @@
+B3:  Hàm cube chạy 1000 lần.
+B4: 17
+B5: Test đúng: 
+int min(int a, int b, int c, int d) {
+ int min = a;
+ if (b < min) min = b;
+ if (c < min) min = c;
+ if (d < min) min = d;
+ return min;
+}
+B6: f(int, double) và f(double, int)
+B7: D
+B8: A
+B9: B
+B10: B
+B11: C
+B12: B
+B13: D
+B14: D
+B15: B
+B16: B
+B17: B
+B18: A
+B19: B
+B20: C
+B21: B
+B22: C
+B23: C
+B24: A
+B25: A
+B26: B
