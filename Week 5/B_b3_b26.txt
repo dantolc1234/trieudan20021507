@@ -1,4 +1,4 @@
-B3:  Hàm cube chạy 1000 lần.
+B3:  Hàm cube chạy 1000 lần. truyền tham trị
 B4: 17
 B5: Test đúng: 
 int min(int a, int b, int c, int d) {
@@ -8,7 +8,7 @@ int min(int a, int b, int c, int d) {
  if (d < min) min = d;
  return min;
 }
-B6: f(int, double) và f(double, int)
+B6: "f(int, double)" và "f(double, int)" đều cho ra dạng string trong 2 dấu " ".
 B7: D
 B8: A
 B9: B
