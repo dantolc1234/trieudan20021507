@@ -13,4 +13,4 @@ int main()
 
     return 0;
 }
-// hàm đệ quy này th
+// hàm đệ quy này không có điều kiện thoát gây ra tràn bộ nhớ
