@@ -2,26 +2,27 @@
 
 using namespace std;
 
-void swap_pointers(char** x, char** y)
+int check1, check2;
+
+int count_even(int* f, int n)
 {
-	char* tmp;
-	tmp = *x;
-	*x = *y;
-	*y = tmp;
+	int cout = 0;
+	for (int i = check1; i <= check2; i++)
+		if (f[i] % 2 == 0) cout++;
+	return cout;
 }
 
 int main()
 {
-	char a[] = "I should print second";
-	char b[] = "I should print first";
+	int n;
+	cin >> n;
+	int* a = new int[n + 1];
+	for (int i = 1; i <= n; i++) cin >> a[i];
+	check1 = 1; check2 = 5;
+	cout << count_even(a, n) << endl;
+	check1 = n - 5 + 1;
+	check2 = n;
+	cout << count_even(a, n) << endl;
 
-	char *s1 = a;
-	char *s2 = b;
-	cout << &s1 << endl << &s2 << endl;
-	swap_pointers(&s1, &s2);
-	cout << &s1 << endl << &s2 << endl;
-	cout << "s1 is " << s1 << endl;
-	cout << "s2 is " << s2 << endl;
 	return 0;
 }
-// Đoạn code chạy không đúng vì đã sử dụng con trỏ trỏ đến con trỏ, nên in ra địa chỉ con trỏ đang đc trỏ đến.

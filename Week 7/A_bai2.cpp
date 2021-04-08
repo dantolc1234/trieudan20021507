@@ -2,15 +2,18 @@
 
 using namespace std;
 
+void f(int a[])
+{
+    for (int i = 0; i < 4;i++) cout << " " << &a[i];
+}
+
 int main()
 {
-	char a[4] = "abc";
-	for (char* cp = a; (*cp) != '\0'; cp += 1) {
-		cout << (void*)cp << " : " << (*cp) << endl;
-	}
-	return 0;
+    int a[100];
+    for(int i = 0; i < 4; i++){
+        cout << " " << &a[i];
+    }
+    cout << endl;
+    f(a);
+    return 0;
 }
-// a. các địa chỉ của biến a cách nhau 1 giá trị.
-// b. kiểu int có giá trị bằng 4
-// c. kiểu double có giá trị bằng 8
-// d. khoảng cách giữa địa chỉ các con trỏ tăng lên 1 đơn vị.
