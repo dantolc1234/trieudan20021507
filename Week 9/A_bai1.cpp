@@ -2,23 +2,26 @@
 
 using namespace std;
 
-void f(int xval)
+const char* concat(const char* s1, const char* s2)
 {
-	int x;
-	x = xval;
-	cout << &x << endl;
+	int count = 0;
+	while (*(s1 + count) != '\0') count++;
+	int n = count;
+	count = 0;
+	char * s = new char[40];
+	while (*(s2 + count) != '\0') count++;
+	for (int i = 0; i < n; i++) *(s + i) = *(s1 + i);
+	for (int i = 0; i < count; i++) *(s + n + i) = *(s2 + i);
+	*(s + n + count) = '\0';
+	return s;
 }
-
-void g(int yval)
-{
-	int y;
-	cout << &y << endl;
-}
-
 int main()
 {
-	f(7);
-	g(11);
+	char* s1 = new char[20];
+	char* s2 = new char[20];
+	cin >> s1;
+	cin >> s2;
+	const char* result = concat(s1, s2);
+	cout << result;
 	return 0;
-	//Hai biến đều có cùng địa chỉ, do là biến địa phương đầu tiên của hàm và hàm đều được gọi từ main
 }
